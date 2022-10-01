@@ -22,4 +22,4 @@ SSH key is a way to avoid using password everytime to log back into the remote c
 
 # Optimizing Remote Running
 One way to optimize remote running is by compiling programs directly in your own machine using ssh key.(Screeb)
-![Drag Racing](download options.png)
+![Drag Racing](hellodjr/cse15l-lab-reports-fa22/blob/main/download%20options.png)
