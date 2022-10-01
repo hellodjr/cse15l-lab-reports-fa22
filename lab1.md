@@ -30,7 +30,7 @@ SSH key is a way to avoid using password everytime to log back into the remote c
 # Optimizing Remote Running
 One way to optimize remote running is by compiling programs directly in your own machine using ssh key.\
 Here is when I compile the java program WhereAmI by logging into the server
-![](required%20logging.png).
+![](required%20logging1.png).
 Here is when I compile the java program directly in local computer by using ssh key + the file that I want to compile.\
 ![](without%20logging.png).
 Obviously,the second one is way more efficient than the first one.
