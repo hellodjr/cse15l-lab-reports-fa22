@@ -1,5 +1,6 @@
 # Installing VScode
 This step is relatively stright-forward.By googling the keyword VScode, you can see that the first result that pops up has a download option. Click on the download option, choose the best version of the studio code that fits into your computer.
+![](google.png)
 ![](download%20options.png)
 # Remotely Connecting
 By downloading the VScode,you now have the VScode downloaded in your computer. Open the VScode,and that open Terminal that is located on the top of the windows.In your terminal, you will type in the ssh command followed by the unique account given by school system in the format of cs15lfa22xx@ieng6.ucsd.edu where xx are the unique letters assigned to individuals.
