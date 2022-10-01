@@ -21,5 +21,5 @@ By using scp command, you can copy the file in your local computer to your remot
 SSH key is a way to avoid using password everytime to log back into the remote computer.On your cilent computer(your local computer), type in ssh-keygen command.When you see the prompt following by "Enter file in which to save the key ...", press enter twice.Now you have the private key and public key saved in your local computer  remotely.Now we need to log back into the server. On your server, type in mkdir .ssh, we are able to copy the public key to the server. Next time we try to connect to the server, we don't need to use password again as long as the private key and public key are matched.
 
 # Optimizing Remote Running
-One way to optimize remote running is by compiling programs directly in your own machine using ssh key.(Screeb)
-![Drag Racing](hellodjr/cse15l-lab-reports-fa22/blob/main/download%20options.png)
+One way to optimize remote running is by compiling programs directly in your own machine using ssh key.
+
