@@ -1,20 +1,20 @@
 Command:grep
  
-first command option: 
+1. first command option: 
 ```
 -c
 ```
-First example
+- First example
 ```
 (base) jrd@Jiajies-MBP-3 911report % grep -c "chapter" chapter-2.txt 
 ```
 ```
 2
 ```
-Explaination:
+- explaination:
 The -c command line options printsa count of the lines that match a pattern inside the quotation mark. Here, it prints out a count of "chapter" inside chapter-2 text file, and it found 2 lines that match with "chapter"
 
-Second example:
+- Second example:
 ```
 (base) jrd@Jiajies-MBP-3 911report % grep -c "chapter" chapter-2.txt chapter-3.txt chapter-5.txt
 ```
@@ -23,10 +23,10 @@ chapter-2.txt:2
 chapter-3.txt:6
 chapter-5.txt:4
 ```
-Explanation:
+- Explanation:
 This one does the exact same thing as the first example, the only difference is that it prints a count of the lines for multiple files at once.
 
-Third example:
+- Third example:
 ```
 (base) jrd@Jiajies-MBP-3 911report % grep -v -c "chapter" chapter-2.txt chapter-13.3.txt
 ```
@@ -34,34 +34,34 @@ Third example:
 chapter-2.txt:946
 chapter-13.3.txt:1717
 ```
-Explanation:
+- Explanation:
 This one is slightly different from last two, by adding -v in front of -c command option, it prints out a count of lines that doesn't contain any pattern as "chapter"
 
-Second command option:
+2. Second command option:
 ```
 -A
 ```
 
-first example:
+- first example:
 ```
 (base) jrd@Jiajies-MBP-3 911report % grep -A 3 "for interagency" chapter-3.txt
 ```
 ```
 for interagency consideration before 9/11. As 1999 came to a close, the CIA had a new strategic plan in place for capturing Bin Ladin, but no option was rated as having more than a 15 percent chance of achieving that objective.
 ```
-Explanation:
+- Explanation:
 -A option is used to print the line after specified N line, here I specify the 3 lines after "for inteagency", it only prints out 3 line after this in chapter-3 text file.
 
-second example:
+- second example:
 ```
 base) jrd@Jiajies-MBP-3 911report % grep -A 3 -i "For interagency" chapter-3.txt
 ```
 ```
 for interagency consideration before 9/11. As 1999 came to a close, the CIA had a new strategic plan in place for capturing Bin Ladin, but no option was rated as having more than a 15 percent chance of achieving that objective.
 ```
-Explanation: the second example does the exact same thing as last one, however, by using -i commond in between, it will ignore the case for matching.Therefore, it prints out the same lines as last even though the matching pattern is upper case in which doesn't match the text.
+- Explanation: the second example does the exact same thing as last one, however, by using -i commond in between, it will ignore the case for matching.Therefore, it prints out the same lines as last even though the matching pattern is upper case in which doesn't match the text.
 
-Third example:
+- Third example:
 ```
 (base) jrd@Jiajies-MBP-3 911report % grep -A 1 -i "interagency" chapter-3.txt chapter-5.txt
 ```
@@ -122,25 +122,25 @@ chapter-6.txt-                like in practice-either the Pentagon's new "phased
 chapter-6.txt:                policymaking, she felt, that Clarke's interagency committee-like all others-report
 chapter-6.txt-                to the principals through the deputies.
 ```
-Explanation:
+- Explanation:
 The third example does the same thing as second example, however, it prints three lines after the mathcing pattern "interagency" for chapter-3 and chapter-6 files.
 
-Third command line option:
+3. Third command line option:
 ```
 -win
 ```
 
-First example:
+- First example:
 ```
 (base) jrd@Jiajies-MBP-3 911report % grep  -win "The law requires the NSA" chapter-3.txt 
 ```
 ```
 728:            The law requires the NSA to not deliberately collect data on U.S. citizens or on
 ```
-Explanation:
+- Explanation:
 -win command option prints the number of line that contains the matching pattern in the text. Here, "The law requires the NSA" shows up in line 728 for the chapter 3 file.
 
-Second example:
+- Second example:
 ```
 (base) jrd@Jiajies-MBP-3 911report % grep  -win -B 4 "The law requires the NSA" chapter-3.txt
 ```
@@ -151,15 +151,15 @@ Second example:
 727-            
 728:            The law requires the NSA to not deliberately collect data on U.S. citizens or on
 ```
-Explanation:
+- Explanation:
 With the help of -B command option, it prints 4 lines of leading context before the matching lines from the example 1.
 
-Third example:
+- Third example:
 ```
 (base) jrd@Jiajies-MBP-3 911report % grep  -win "The law requires" ./*
 ```
 ```
 ./chapter-3.txt:728:            The law requires the NSA to not deliberately collect data on U.S. citizens or on
 ```
-Explanation:
+- Explanation:
 For this example, it prints the exact same thing as first exaple,however, it prints out the directory followed by matching line for "The law requires".
