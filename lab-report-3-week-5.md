@@ -42,8 +42,8 @@ chapter-13.3.txt:1717
 - Explanation:
 This one is slightly different from last two, by adding -v in front of -c command option, it prints out a count of lines that doesn't contain any pattern as "chapter"
 
- Second command option:
- =
+Second command option:
+=
 ```
 -A
 ```
